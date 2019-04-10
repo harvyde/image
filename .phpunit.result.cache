@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":232:{a:2:{s:7:"defects";a:3:{s:18:"ImageTest::testAdd";i:4;s:20:"ImageTest::testEmpty";i:4;s:20:"ImageTest::testSetup";i:4;}s:5:"times";a:3:{s:18:"ImageTest::testAdd";d:0;s:20:"ImageTest::testEmpty";d:0;s:20:"ImageTest::testSetup";d:0;}}}

@@ -1,0 +1,34 @@
+{
+  "name": "harvyde/image",
+  "description": "render images at ease, renders 2x images for retina screens, detect image dimensions using php ext-gd",
+  "type":              "library",
+  "license":           "MIT",
+  "homepage":          "http://www.HarvinderDeogan.com",
+  "keywords":          [
+    "retina",
+    "image",
+    "image class"
+  ],
+  "authors": [
+    {
+      "name": "Harvinder Singh",
+      "email": "mail@harvinderdeogan.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "files": [
+      "Image.inc"
+    ],
+    "psr-4": {
+      "harvyde\\Image\\": ""
+    }
+  },
+  "require": {
+    "ext-gd": ">=5.3",
+    "php": ">=5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  }
+}
