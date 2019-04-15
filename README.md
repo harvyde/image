@@ -1,4 +1,4 @@
-a library for detecting sites / hosts and evironments. This library can be useful to build a multisite. Multiple domains pointing to the same application. You can use this class anywhere in your application to serve content based on domain and evironment site be being accessed.
+render images at ease, renders 2x images for retina screens, detect image dimensions using php ext-gd
 
 # usage
 ```php
