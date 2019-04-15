@@ -1,10 +1,11 @@
 {
   "name": "harvyde/image",
   "description": "render images at ease, renders 2x images for retina screens, detect image dimensions using php ext-gd",
-  "type":              "library",
-  "license":           "MIT",
-  "homepage":          "http://www.HarvinderDeogan.com",
-  "keywords":          [
+  "version": "0.1.0",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "http://www.HarvinderDeogan.com",
+  "keywords": [
     "retina",
     "image",
     "image class"
