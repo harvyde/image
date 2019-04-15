@@ -12,7 +12,7 @@ render images at ease, renders 2x images for retina screens, detect image dimens
     print $img->imgResponsive();
 ```
 
-#Support and Feedback
+# Support and Feedback
 If you find a bug, please submit the issue in Github directly. [harvyde/image](https://github.com/harvyde/image/issues)  Issues
 
 
