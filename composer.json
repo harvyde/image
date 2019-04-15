@@ -25,7 +25,7 @@
     }
   },
   "require": {
-    "ext-gd": ">=5.3",
+    "ext-gd": "*",
     "php": ">=5.3"
   },
   "require-dev": {
