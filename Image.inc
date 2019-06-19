@@ -49,23 +49,27 @@ class Image {
 
   public $srcset;
 
-  function __construct($image) {
-    $this->debug = 0;
+  function __construct($image, $options = []) {
+//    $this->debug = 0;
+    // you can customize these paths in your child class
+    // see  examples/ZImage.inc
+    $_options = [
+      'path'=>"/var/www/html/project/path/to/theme/images/",
+      // this can be an absolute url if refering to external images
+      'url-prefix'=>"/images/",
+      ];
+
+    $options = array_merge($_options, $options);
+    $this->imagesServerPath = $options['path'];
+    $this->imagesUrlPath = $options['url-prefix'];
+
+
+//    $this->pr($options);
     $this->image = ltrim($image, "/");
-    $this->setImagesPath();
     @$this->setImageDimensions();
     @$this->setIsImageRetina();
     $this->clickToEnlarge = false;
     $this->largeImage = false;
-  }
-
-  /**
-   * @param Set image relative path
-   * todo
-   */
-  function setImagesPath() {
-    $this->imagesServerPath = "/Users/harvinder/sites/image/tests/images/";
-    $this->imagesUrlPath = "/images/";
   }
 
   /**
@@ -129,7 +133,7 @@ class Image {
   function pr($a = null) {
     if ($this->debug) {
       print('<pre>');
-      echo htmlentities($a);
+      print_r ($a);
       print('</pre>');
     }
 
